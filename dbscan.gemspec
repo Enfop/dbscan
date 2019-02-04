@@ -9,4 +9,5 @@ Gem::Specification.new do |gem|
 	gem.files = ['lib/dbscan.rb']
 	gem.add_runtime_dependency 'distance_measures'
 	gem.add_runtime_dependency 'geocoder'
+	gem.add_development_dependency "rspec"
 end
