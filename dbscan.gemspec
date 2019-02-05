@@ -10,4 +10,5 @@ Gem::Specification.new do |gem|
 	gem.add_runtime_dependency 'distance_measures'
 	gem.add_runtime_dependency 'geocoder'
 	gem.add_development_dependency "rspec"
+	gem.add_development_dependency "pry"
 end
