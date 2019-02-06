@@ -64,9 +64,9 @@ module DBSCAN
 		def inmediate_neighbors( point )
 			neighbors = []
 			@points.each do |p|
-				if p.items != point.items
+				if p.items != point.items || p != point
 					d = eval("point.items.#{options[:distance]}( p.items )")
-					neighbors.push( p ) if d < options[:epsilon]
+					neighbors.push( p ) if d <= options[:epsilon]
 				end
 			end
 			neighbors
